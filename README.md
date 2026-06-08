@@ -1,68 +1,81 @@
-Sistema de Gerenciamento de Cafeteria
-Sobre o Projeto
-Este projeto foi desenvolvido como atividade acadêmica da disciplina de Programação Orientada a Objetos, ministrada pelo professor Felippe Pires.
-O sistema consiste em um gerenciamento simples de cafeteria executado no terminal (console), permitindo o controle de:
-Clientes
-Produtos
-Pedidos
-Itens dos pedidos
-Todo o projeto foi desenvolvido do zero, utilizando conhecimentos adquiridos durante a disciplina e também experiências anteriores em outras atividades acadêmicas desenvolvidas por mim.
-Desenvolvedor
-Caio Emmanuel de Araújo Cabral
-Disciplina: Programação Orientada a Objetos
-Professor: Felippe Pires
-Funcionalidades Implementadas
-Clientes
-Cadastro de clientes
-Listagem de clientes
-Busca de cliente por ID
-Remoção de cliente
+# Sistema de Gerenciamento de Pedidos da Cafeteria
 
+Autor: Caio Emmanuel de Araújo Cabral
 
+## Descrição
 
-Produtos
-Cadastro de produtos
-Listagem de produtos
-Atualização de preços
-Remoção de produtos
-Pedidos
-Criação de pedidos
-Listagem de pedidos
-Busca de pedidos
-Cancelamento de pedidos
-Itens do Pedido
-Adição de produtos ao pedido
-Remoção de itens
-Listagem de itens do pedido
-Cálculo do valor total do pedido
-Tecnologias Utilizadas
-Java
-Programação Orientada a Objetos (POO)
-Collections (List e ArrayList)
-Git
-GitHub
-Estrutura do Projeto
-src/
- ├── Cliente.java
- ├── Produto.java
- ├── Pedido.java
- ├── ItemPedido.java
- ├── SistemaCafe.java
- └── Main.java
+Aplicação em Java para gerenciar clientes, produtos, pedidos e itens de pedido via console.
 
+## Arquivos
 
+- `Cliente.java`
+- `Produto.java`
+- `Pedido.java`
+- `ItemPedido.java`
+- `Main.java`
 
-Conceitos Aplicados
-Durante o desenvolvimento foram utilizados conceitos importantes de Programação Orientada a Objetos, como:
-Encapsulamento
-Classes e Objetos
-Construtores
-Relacionamento entre classes
-Listas dinâmicas
-Métodos
-Organização modular do sistema
-Observações
-O sistema funciona totalmente via terminal.
-Os dados são armazenados em memória utilizando ArrayList.
-O foco principal do projeto foi a funcionalidade, organização e aplicação prática dos conceitos vistos em aula.
+## Como compilar
+
+No diretório do projeto, execute:
+
+```bash
+javac *.java
+```
+
+## Como executar
+
+```bash
+java Main
+```
+
+## Fluxo de teste simples
+
+1. Cadastrar cliente
+   - Opção `1`
+   - Nome: `Caio Emmanuel`
+   - Telefone: `11999999999`
+
+2. Listar clientes
+   - Opção `2`
+
+3. Cadastrar produto
+   - Opção `5`
+   - Nome: `Café`
+   - Preço: `4.50`
+
+4. Listar produtos
+   - Opção `6`
+
+5. Criar pedido
+   - Opção `9`
+   - ID do cliente: `1`
+
+6. Adicionar item ao pedido
+   - Opção `13`
+   - ID do pedido: `1`
+   - ID do produto: `1`
+   - Quantidade: `2`
+
+7. Listar pedidos
+   - Opção `10`
+
+8. Calcular total do pedido
+   - Opção `16`
+   - ID do pedido: `1`
+
+9. Sair
+   - Opção `0`
+
+## Resultado esperado
+
+- O cliente deve ser cadastrado sem nome vazio.
+- O produto deve ser cadastrado com preço maior que zero.
+- O pedido deve estar associado ao cliente existente.
+- O item deve ser adicionado ao pedido com quantidade maior que zero.
+- O total do pedido deve ser calculado corretamente.
+
+## Observação
+
+Se o comando `javac` não estiver disponível, instale o JDK antes de compilar e executar o projeto.
+
 
